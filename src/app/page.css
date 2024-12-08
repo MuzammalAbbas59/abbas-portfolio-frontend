@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Background Animations */
+#poetry-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 223, 186, 0.5), rgba(255, 153, 153, 0.3));
+  animation: fade 10s infinite alternate;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.bg-coding {
+  background: linear-gradient(45deg, #2d2d2d, #3b3b3b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  position: relative;
+  padding: 40px 0;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Poet Background */
+.bg-poetry {
+  background-color: #f4f4f4;
+  /* background-image: url('path/to/your/urdu-poetry-image.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Experience Card Styles */
+.experience-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-title {
+  font-size: 28px;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #444;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.project-title {
+  font-size: 22px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.project-description {
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+.project-link {
+  color: #1e90ff;
+  margin-top: 0.5rem;
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #ffcc00;
+}
+
+/* Keyframes */
+@keyframes fade {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Typography */
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin: 20px 0;
+  color: #ffd700;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+p.italic {
+  font-style: italic;
+  color: #cccccc;
+}
+
+/* Buttons */
+button {
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(120deg, #ffd700, #ff5733);
+  color: #1a1a1a;
+}
+
+/* Poetry Styling */
+.poem {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  color: #ffcccb;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.poem:hover {
+  transform: scale(1.05);
+}
+
+/* Add Some Spacing */
+.mt-10 {
+  margin-top: 4rem;
+}

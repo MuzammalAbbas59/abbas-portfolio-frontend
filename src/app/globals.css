@@ -14,6 +14,23 @@
   }
 }
 
+/* globals.css */
+
+body {
+  font-family: 'Inter', sans-serif; /* Default font for the app */
+}
+
+/* Apply different fonts for poetry section */
+.poetry-text {
+  font-family: 'Playfair Display', serif; /* Poetry font */
+}
+
+/* You can also add other customizations */
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+}
+
+
 body {
   color: var(--foreground);
   background: var(--background);
